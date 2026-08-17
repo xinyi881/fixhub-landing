@@ -1,0 +1,13 @@
+.DS_Store
+# 备份文件
+*.bak
+*backup*
+*.select-backup
+*.pre-*
+# 设计稿/预览截图
+preview-*.png
+preview-*.jpg
+final-*.png
+redesign-*.png
+v*.png
+v*-*.png
