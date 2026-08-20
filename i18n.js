@@ -22,6 +22,7 @@
       'nav.cta': 'WhatsApp 咨询 <span>↗</span>',
 
       'hero.photoAria': '专业技师使用精密工具检查手机内部元件',
+      'hero.eyebrow': '<span></span> 新山 JB 装置维修 · 主机板级诊断',
       'hero.title': '手机、平板、笔电、耳机，<br><span>坏了先问 Martin。</span>',
       'hero.lede': '从萤幕、电池到主机板故障，先传症状给 Martin 判断值不值得修。门市每天 10:00 AM – 10:00 PM 营业。',
       'hero.ctaPrimary': 'WhatsApp 传送故障状况 <span>↗</span>',
@@ -207,6 +208,7 @@
       'nav.cta': 'WhatsApp Us <span>↗</span>',
 
       'hero.photoAria': 'A technician inspecting a phone\'s internals with precision tools',
+      'hero.eyebrow': '<span></span> JB device repair · board-level diagnosis',
       'hero.title': 'Phones, tablets, laptops, earbuds —<br><span>ask Martin first.</span>',
       'hero.lede': 'From screens and batteries to board-level faults, message Martin the details and he\'ll tell you if it\'s worth fixing. Open daily 10:00 AM – 10:00 PM.',
       'hero.ctaPrimary': 'WhatsApp your issue <span>↗</span>',
