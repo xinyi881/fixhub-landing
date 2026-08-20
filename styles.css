@@ -68,7 +68,7 @@ button { color: inherit; font: inherit; }
 .header-inner { height: 100%; display: flex; align-items: center; }
 .header-right { display: flex; align-items: center; gap: 6px; }
 .wordmark { display: inline-flex; align-items: center; gap: 10px; font-weight: 900; letter-spacing: -.04em; }
-.wordmark-logo { width: 36px; height: 36px; border-radius: 9px; flex: none; box-shadow: 0 3px 10px rgba(10,132,255,.25); }
+.wordmark-logo { height: 38px; width: auto; flex: none; }
 .wordmark > span { font-size: 23px; color: var(--text); }
 .wordmark small { font-size: 12px; letter-spacing: .13em; opacity: .85; }
 .brand-cyan {
