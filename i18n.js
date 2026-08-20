@@ -11,7 +11,7 @@
       'meta.ogdescription': '手机、平板、MacBook、AirPods 与主机板故障判断；JB 地区晚间上门取送。',
 
       'skipLink': '跳到主要内容',
-      'brandAria': 'FixHub Martin 首页',
+      'brandAria': 'FixHub 首页',
       'menuOpen': '开启选单',
       'navAria': '主要导览',
       'nav.services': '服务项目',
@@ -197,7 +197,7 @@
       'meta.ogdescription': 'Phone, tablet, MacBook, AirPods & board-level fault diagnosis; evening pickup & delivery around JB.',
 
       'skipLink': 'Skip to main content',
-      'brandAria': 'FixHub Martin Home',
+      'brandAria': 'FixHub Home',
       'menuOpen': 'Open menu',
       'navAria': 'Main navigation',
       'nav.services': 'Services',
