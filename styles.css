@@ -733,85 +733,104 @@ body::before{ background:
   align-items:center;
 }
 .hero-copy{ width:100%; max-width:680px; }
-.hero-brand-lockup{
-  display:flex;
-  align-items:flex-end;
-  gap:18px;
-  margin:0 0 28px;
-}
-.hero-brand-lockup img{
-  width:min(520px, 74vw);
-  height:auto;
-  filter:drop-shadow(0 18px 28px rgba(18,24,38,.16));
-}
-.hero-brand-lockup span{
-  flex:none;
-  padding:0 0 10px 16px;
-  border-left:2px solid rgba(255,122,69,.55);
-  color:var(--muted);
-  font-size:11px;
-  font-weight:850;
-  letter-spacing:.14em;
-  line-height:1.25;
-  text-transform:uppercase;
-}
 .hero h1{
   max-width:650px;
   font-size:clamp(40px,4.7vw,68px);
   letter-spacing:0;
 }
 .hero-lede{ max-width:590px; }
-.hero-brand-panel{
+.hero-service-panel{
   position:relative;
-  align-self:stretch;
+  align-self:center;
+  display:grid;
+  gap:22px;
+  padding:34px;
+  border:1px solid rgba(18,24,38,.12);
+  border-radius:22px;
+  background:rgba(255,255,255,.74);
+  box-shadow:0 24px 60px rgba(18,24,38,.12);
+  backdrop-filter:blur(18px);
+}
+.hero-service-panel::before{
+  content:"";
+  position:absolute;
+  inset:14px;
+  z-index:-1;
+  border-radius:18px;
+  border:1px solid rgba(10,132,255,.12);
+}
+.panel-kicker{
+  margin:0;
+  color:var(--warm);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.18em;
+  line-height:1;
+}
+.hero-service-panel h2{
+  margin:0;
+  color:var(--text);
+  font-size:clamp(28px,3.2vw,42px);
+  line-height:1.05;
+  letter-spacing:0;
+}
+.hero-service-panel > p:not(.panel-kicker){
+  margin:0;
+  color:rgba(20,27,40,.68);
+  font-size:14px;
+  line-height:1.75;
+}
+.panel-list{
+  display:grid;
+  gap:12px;
+}
+.panel-list div{
   display:flex;
   flex-direction:column;
-  justify-content:center;
-  min-height:430px;
-  padding:40px 0;
+  gap:4px;
+  padding:16px 18px;
+  border:1px solid rgba(18,24,38,.10);
+  border-radius:14px;
+  background:#fff;
+  box-shadow:0 10px 24px rgba(18,24,38,.06);
 }
-.hero-brand-panel::before,
-.hero-brand-panel::after{
+.panel-list div::before{
   content:"";
-  display:block;
-  height:1px;
-  background:linear-gradient(90deg, transparent, rgba(18,24,38,.28), transparent);
-}
-.hero-brand-panel img{
-  width:100%;
-  max-width:420px;
-  margin:36px auto 24px;
-  filter:drop-shadow(0 24px 34px rgba(18,24,38,.22));
-}
-.brand-panel-lines{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:10px;
-  max-width:360px;
-  margin:0 auto 36px;
-}
-.brand-panel-lines span{
-  display:flex;
-  justify-content:space-between;
-  padding:9px 0;
-  border-top:1px solid rgba(18,24,38,.12);
-  color:rgba(20,27,40,.66);
-  font-size:11px;
-  font-weight:850;
-  letter-spacing:.14em;
-}
-.brand-panel-lines span::after{
-  content:"";
-  width:8px;
-  height:8px;
-  margin-top:4px;
+  width:9px;
+  height:9px;
+  margin-bottom:4px;
   border-radius:50%;
   background:var(--warm);
+}
+.panel-list strong{
+  color:var(--text);
+  font-size:14px;
+  line-height:1.35;
+}
+.panel-list span{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
 }
 .quick-strip{
   margin-top:-54px;
   position:relative;
   z-index:2;
+}
+.quick-grid > div > div{
+  display:block;
+  min-height:0;
+  padding:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  backdrop-filter:none;
+}
+.quick-grid > div > div:hover{
+  transform:none;
+  border-color:transparent;
+  box-shadow:none;
 }
 
 @media (max-width:1100px){
@@ -819,7 +838,7 @@ body::before{ background:
   .wordmark-logo{ height:46px; max-width:190px; }
   .site-nav{ gap:14px; }
   .hero-inner{ grid-template-columns:1fr; }
-  .hero-brand-panel{ display:none; }
+  .hero-service-panel{ display:none; }
   .hero-copy{ max-width:760px; }
 }
 
@@ -845,19 +864,6 @@ body::before{ background:
     padding-top:0;
     padding-bottom:0;
   }
-  .hero-brand-lockup{
-    display:block;
-    margin-bottom:24px;
-  }
-  .hero-brand-lockup img{ width:min(330px, 90vw); }
-  .hero-brand-lockup span{
-    display:block;
-    width:max-content;
-    max-width:100%;
-    margin-top:12px;
-    padding:0 0 0 12px;
-    font-size:10px;
-  }
   .hero h1{
     max-width:100%;
     font-size:clamp(32px,8.8vw,42px);
@@ -875,8 +881,9 @@ body::before{ background:
   }
   .eyebrow span{ width:30px; flex:none; }
   .hero-lede{
-    max-width:100%;
+    max-width:min(100%, 330px);
     overflow-wrap:anywhere;
+    word-break:break-all;
   }
   .hero-actions .button{ white-space:normal; }
   .hero-actions{

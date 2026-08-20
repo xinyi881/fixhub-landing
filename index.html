@@ -13,7 +13,7 @@
   <script>document.documentElement.classList.add('js');</script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/repair-hero.jpg" as="image">
-  <link rel="stylesheet" href="styles.css?v=20260820-logo-focus">
+  <link rel="stylesheet" href="styles.css?v=20260820-no-duplicate-logo">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skipLink">跳到主要内容</a>
@@ -59,26 +59,33 @@
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-copy reveal">
-          <div class="hero-brand-lockup" aria-hidden="true">
-            <img src="assets/logo.png" alt="" width="1161" height="281">
-            <span>JB Device Repair</span>
-          </div>
           <p class="eyebrow"><span></span> JB device repair · board-level diagnosis</p>
           <h1 id="hero-title" data-i18n-html="hero.title">手机、平板、笔电、耳机，<br><span>坏了先问 Martin。</span></h1>
-          <p class="hero-lede" data-i18n="hero.lede">从萤幕、电池到主机板级故障，先私讯说明状况，Martin 告诉你值不值得修。门市每天 10:00 AM – 10:00 PM 营业。</p>
+          <p class="hero-lede" data-i18n="hero.lede">从萤幕、电池到主机板故障，先传症状给 Martin 判断值不值得修。门市每天 10:00 AM – 10:00 PM 营业。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="https://wa.me/601161181147" target="_blank" rel="noopener noreferrer" data-i18n-html="hero.ctaPrimary">WhatsApp 传送故障状况 <span>↗</span></a>
             <a class="button button-ghost" href="#services" data-i18n-html="hero.ctaGhost">看服务与价格 <span>↓</span></a>
           </div>
         </div>
-        <div class="hero-brand-panel reveal" aria-hidden="true">
-          <img src="assets/logo.png" alt="" width="1161" height="281">
-          <div class="brand-panel-lines">
-            <span>BOARD-LEVEL</span>
-            <span>FAST RESPONSE</span>
-            <span>JB · 10:00-22:00</span>
+        <aside class="hero-service-panel reveal" aria-label="服务重点" data-i18n-aria="hero.panelAria">
+          <p class="panel-kicker" data-i18n="hero.panelKicker">REPAIR DESK</p>
+          <h2 data-i18n-html="hero.panelTitle">先判断，<br>再决定要不要修。</h2>
+          <p data-i18n="hero.panelDesc">把型号、故障画面和使用状况传来，先帮你判断维修方向和大概风险。</p>
+          <div class="panel-list">
+            <div>
+              <strong data-i18n="hero.panel1Title">先看症状</strong>
+              <span data-i18n="hero.panel1Desc">屏幕、电池、充电、主机板逐层排查</span>
+            </div>
+            <div>
+              <strong data-i18n="hero.panel2Title">报价再动手</strong>
+              <span data-i18n="hero.panel2Desc">确认值得修才安排取机和维修</span>
+            </div>
+            <div>
+              <strong data-i18n="hero.panel3Title">每天 10:00-22:00</strong>
+              <span data-i18n="hero.panel3Desc">适合晚下班或跨境通勤后咨询</span>
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
