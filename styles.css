@@ -918,3 +918,74 @@ body::before{ background:
   .quick-grid span{ font-size:11.5px; }
   .quick-strip{ margin-top:-34px; }
 }
+/* ---------- technology palette: graphite + electric cyan ---------- */
+:root{
+  --bg:#071019;
+  --bg-soft:#0b1723;
+  --card:#0e1d2a;
+  --card-solid:#102131;
+  --navy:#071019;
+  --cyan:#27d7f2;
+  --cyan-bright:#75ecff;
+  --cyan-soft:rgba(39,215,242,.11);
+  --violet:#7487ff;
+  --text:#edf7fb;
+  --muted:#91a8b6;
+  --line:rgba(114,218,237,.14);
+  --line-strong:rgba(39,215,242,.48);
+  --glow:0 12px 34px rgba(39,215,242,.18);
+  --glow-soft:0 16px 42px rgba(0,0,0,.28);
+  --warm:#f28a2e;
+  --warm-2:#ffad52;
+}
+body{ background:var(--bg); color:var(--text); }
+body::before{ background:
+  linear-gradient(rgba(39,215,242,.025) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(39,215,242,.025) 1px, transparent 1px),
+  radial-gradient(52% 40% at 12% 0%, rgba(39,215,242,.12), transparent 68%),
+  radial-gradient(42% 38% at 94% 16%, rgba(116,135,255,.10), transparent 70%);
+  background-size:48px 48px,48px 48px,auto,auto;
+}
+.site-header,.site-header.scrolled{ background:rgba(5,14,23,.91); border-bottom:1px solid rgba(39,215,242,.16); box-shadow:0 12px 34px rgba(0,0,0,.25); }
+.wordmark-logo{ filter:drop-shadow(0 0 13px rgba(117,236,255,.24)); }
+.site-nav>a:not(.nav-cta){ color:rgba(225,241,247,.72); }
+.site-nav>a:not(.nav-cta):hover{ color:var(--cyan-bright); }
+.lang-select{ background:rgba(14,29,42,.9); color:var(--text); border-color:var(--line); }
+.lang-menu{ background:#0d1b28; border-color:var(--line); box-shadow:0 18px 48px rgba(0,0,0,.42); }
+.lang-menu button{ color:rgba(237,247,251,.8); }
+.menu-button{ color:var(--text); }
+.hero{ background:#071019; }
+.hero-photo{ opacity:.48; filter:saturate(.7) contrast(1.08) hue-rotate(170deg); }
+.hero-shade{ background:
+  linear-gradient(to right, rgba(7,16,25,.99) 0%, rgba(7,16,25,.95) 38%, rgba(7,16,25,.63) 68%, rgba(7,16,25,.26) 100%),
+  radial-gradient(45% 55% at 15% 34%, rgba(39,215,242,.12), transparent 68%),
+  radial-gradient(38% 52% at 83% 18%, rgba(116,135,255,.13), transparent 68%); }
+.eyebrow{ color:rgba(171,208,221,.72); }
+.hero h1,.section-heading h2,.video-copy h2,.device-card h3,.repair-problem h3,.location-address strong,.faq-list summary,.faq-prep h3{ color:var(--text); }
+.hero h1 span{ background:linear-gradient(95deg,#effcff 0%,var(--cyan-bright) 42%,#8c9cff 100%); -webkit-background-clip:text; background-clip:text; color:transparent; filter:drop-shadow(0 0 18px rgba(39,215,242,.15)); }
+.hero-lede{ color:rgba(201,222,230,.76); }
+.button-ghost{ color:var(--text); background:rgba(14,29,42,.72); border-color:var(--line); }
+.button-ghost:hover{ background:rgba(39,215,242,.1); border-color:var(--cyan); }
+.hero-service-panel{ background:linear-gradient(145deg,rgba(15,33,48,.86),rgba(8,21,32,.78)); border-color:rgba(39,215,242,.22); box-shadow:0 28px 70px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.04); }
+.hero-service-panel::before{ border-color:rgba(39,215,242,.14); }
+.hero-service-panel h2{ color:var(--text); }
+.hero-service-panel>p:not(.panel-kicker){ color:var(--muted); }
+.panel-list div,.quick-grid div,.device-card,.repair-table,.symptom-finder,.ig-case-card,.process-list li,.location-card,.trust-card,.price-note{ background:linear-gradient(145deg,rgba(16,33,49,.96),rgba(10,24,36,.96)); border-color:var(--line); box-shadow:0 14px 34px rgba(0,0,0,.2); }
+.panel-list strong,.quick-grid strong,.ig-case-card h3,.process-list h3,.trust-card h3{ color:var(--text); }
+.panel-list span,.quick-grid span,.trust-card p{ color:var(--muted); }
+.repair-table-head,.sf-tabs{ background:#091722; color:var(--muted); border-color:var(--line); }
+.repair-row:hover,.repair-price,.sf-result{ background:rgba(39,215,242,.035); }
+.sf-tab{ background:#102131; color:var(--muted); border-color:var(--line); }
+.sf-symptoms button,.device-card li,.sf-tip p{ color:rgba(215,233,240,.8); border-color:var(--line); }
+.ig-cases{ background:linear-gradient(180deg,rgba(39,215,242,.035),transparent); }
+.video-frame video{ background:#050c12; border-color:var(--line); }
+.map-buttons a{ color:var(--text); background:#102131; border-color:var(--line-strong); }
+.location-map{ border-color:var(--line); box-shadow:0 18px 42px rgba(0,0,0,.3); }
+.about-copy blockquote{ color:var(--text); background:var(--cyan-soft); }
+.faq-prep{ background:rgba(242,138,46,.08); border-color:rgba(242,138,46,.28); }
+.faq-prep li{ color:rgba(220,233,238,.82); }
+.site-footer{ background:#050d15; border-top-color:var(--line); color:var(--text); }
+@media(max-width:720px){
+  .site-header,.site-header.scrolled,.site-nav{ background:rgba(5,14,23,.98); }
+  .site-nav>a:not(.nav-cta){ color:var(--text); border-bottom-color:var(--line); }
+}
