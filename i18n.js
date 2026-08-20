@@ -171,17 +171,6 @@
       'trust.c4.t': '用料透明',
       'trust.c4.d': '使用原厂或同等级优质零件，事先说明零件等级与差价，不含糊。<mark>（零件政策待你确认）</mark>',
 
-      'reviews.kicker': '客户评价',
-      'reviews.title': '新店开张，欢迎留下你的评价。',
-      'reviews.desc': 'FixHub Martin 刚开张，还没有客户评价。如果你是第一位顾客，欢迎分享你的体验！',
-      'reviews.r1': '刚开张的新店，第一位顾客的评价会出现在这里。你的体验，就是我们的招牌。',
-      'reviews.n1': '— 第一位顾客（就是你）',
-      'reviews.r2': '修得好不好，交给时间和你说了算。每一则真实评价，都是 Martin 继续把活做细的理由。',
-      'reviews.n2': '— 待你的分享',
-      'reviews.r3': '送修前想先聊聊？直接 WhatsApp 私讯 Martin，先说明状况再决定值不值得修。',
-      'reviews.n3': '— 随时欢迎咨询',
-      'reviews.note': '＊新店开张初期暂无客户评价；收到真实评价后会替换为顾客原话。',
-
       'cta.title': '先说说你的装置，<br>发生什么了。',
       'cta.btn': 'WhatsApp 私讯 Martin <span>↗</span>',
 
@@ -356,17 +345,6 @@
       'trust.c3.d': 'We only work on the faulty parts — we never browse, copy, or share your photos, messages, or personal data.',
       'trust.c4.t': 'Transparent parts',
       'trust.c4.d': 'Genuine or equivalent-grade parts, with grade and price difference stated upfront — no ambiguity.<mark> (Parts policy TBD)</mark>',
-
-      'reviews.kicker': 'What clients say',
-      'reviews.title': 'New shop — we\'d love your first review.',
-      'reviews.desc': 'FixHub Martin just opened and has no customer reviews yet. If you\'re our first customer, we\'d love to hear about your experience!',
-      'reviews.r1': 'A brand-new shop — the first customer\'s review will appear here. Your experience is our reputation.',
-      'reviews.n1': '— Our first customer (you)',
-      'reviews.r2': 'Whether we repair well is up to time — and to you. Every honest review is a reason for Martin to keep doing the job right.',
-      'reviews.n2': '— Awaiting your story',
-      'reviews.r3': 'Want to chat before sending your device in? Message Martin on WhatsApp, describe the issue, and decide whether it\'s worth fixing.',
-      'reviews.n3': '— Always happy to advise',
-      'reviews.note': '＊No customer reviews yet while the shop is new; once real feedback comes in, we\'ll replace these with customers\' own words.',
 
       'cta.title': 'Tell us about your device<br>& what happened.',
       'cta.btn': 'Message Martin on WhatsApp <span>↗</span>',
